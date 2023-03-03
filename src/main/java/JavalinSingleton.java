@@ -50,8 +50,8 @@ public class JavalinSingleton {
             //manipulating 'song' as a java object 
             //update the artist in the song object to "Beatles"
 
-            String songFromJson = ctx.body();
-            Song song = om.readValue(songFromJson, Song.class);
+            String songFromJson1 = ctx.body();
+            Song song = om.readValue(songFromJson1, Song.class);
             song.artistName("Beatles");
 
       //generate an HTTP response with the user object in the response body as a JSON.
